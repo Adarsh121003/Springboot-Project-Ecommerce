@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: ecommerce2
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: postgres
+    password: Adarsh@1234
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  main:
+    allow-bean-definition-overriding: true
+
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 3210de6d30d855
+    password: 69014a644841e4
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  secret: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N9dPip32yQynt59595E
+  expiration: 86400000
+
+server:
+  port: 8080
